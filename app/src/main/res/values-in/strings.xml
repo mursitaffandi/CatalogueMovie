@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Katalog Film</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="text_detail_releasedate">release</string>
+    <string name="content_description_poster_detail">deskripsi</string>
+    <string name="content_description_icon_rate">icon_reate</string>
+    <string name="text_detail_description">deskripsi</string>
+    <string name="btnSaveFavorite">simpan</string>
+    <string name="tvTrailer">cuplikan</string>
+    <string name="tvReview">tanggapan</string>
+    <string name="tvdetailnoReviewView">tidak ada tanggapan</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Buka navigation drawer</string>
+    <string name="navigation_drawer_close">Tutup navigation drawer</string>
+    <string name="title_activity_search">Pencarian Film</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="label_tab_nowplaying">Sekarang Diputar</string>
+    <string name="label_tab_upcoming">Akan Datang</string>
+    <string name="nav_header_name">Mursit Affandi</string>
+    <string name="nav_header_link">mursitaffandi@gmail.com</string>
+    <string name="label_drawer_nowplaying">Sekarang Diputar</string>
+    <string name="label_drawer_upcoming">Akan Datang</string>
+    <string name="label_menu_search">Cari</string>
+    <string name="label_button_item_detail">Detail</string>
+    <string name="label_button_item_share">Bagikan</string>
+    <string name="label_action_share">Bagikan Film</string>
+    <string name="setting_change_language">Ganti Bahasa</string>
+    <string name="label_tab_favorite">Kesukaan</string>
+    <string name="label_drawer_favorite">Kesukaan</string>
+    <string name="switch_fav">Suka</string>
+    <string name="label_release_date">Release</string>
+    <string name="label_vote">Vote</string>
+    <string name="label_genres">Genre</string>
+    <string name="label_overview">Overview</string>
+    <string name="option_settings">Pengaturan</string>
+    <string name="action_notification">Notification</string>
+    <string name="action_language">Bahasa</string>
+    <string name="key_notif_daily">key_switch_notif_daily</string>
+    <string name="key_notif_nowplaying">key_switch_notif_nowplaying</string>
+    <string name="key_setting_language">key_language</string>
+    <string name="label_notif_daily_title">Pengingat Harian</string>
+    <string name="label_notif_nowplaying_title">Pengingat Film Baru Keluar</string>
+    <string name="label_setting_language_title">Ke Pengaturan Bahasa</string>
+    <string name="label_notif_daily_summary">Ubah Pemberitahuan Harian</string>
+    <string name="label_notif_nowplaying_summary">Ubah Pemberiatahuan Film Baru Keluar</string>
+    <string name="label_setting_language_summary">Ubah Pengaturan Bahasa Sistem</string>
+    <string name="text_body_notif_daily_reminder">Katalog Movie kangen kamu</string>
+    <string name="message_set_daily_reminder_on">Pengingat Harian Dinyalakan</string>
+    <string name="message_set_daily_reminder_off">Pengingat Harian Dimatikan</string>
+    <string name="message_upcoming_release">Hari ini %s keluar</string>
+    <string name="message_toast_set_daily_reminder_on">Daily Reminder On at</string>
+    <string name="message_toast_set_daily_reminder_off">Daily reminder off</string>
+    <string name="message_toast_set_scheduler_on">Scheduler On</string>
+    <string name="message_toast_set_scheduler_off">Scheduler off</string>
+    <string name="message_toast_detailmovie_unsuccess_load">Film tidak gagal di simpan, tidak ada internet</string>
+</resources>
