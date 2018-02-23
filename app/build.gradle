@@ -10,7 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        buildConfigField "String", "API_KEY", "\"API_KEY_v3\""
+        buildConfigField "String", "API_KEY", "\"fd9bd886122bf38660b918a3cccc2f7f\""
         buildConfigField "String", "BASE_URL", "\"http://api.themoviedb.org/3/\""
         buildConfigField "String", "BASE_URL_IMG", "\"http://image.tmdb.org/t/p/\""
         vectorDrawables.useSupportLibrary = true
