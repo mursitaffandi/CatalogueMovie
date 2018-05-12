@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.facebook.stetho.Stetho;
 import com.facebook.stetho.okhttp3.StethoInterceptor;
+import com.jakewharton.picasso.OkHttp3Downloader;
 import com.squareup.picasso.OkHttpDownloader;
 import com.squareup.picasso.Picasso;
 
@@ -16,10 +17,33 @@ import okhttp3.OkHttpClient;
 
 public class MyApplication extends Application {
     private static Context mContext;
+
+    private static Picasso picasso;
+
+    private void setPicasso() {
+
+        OkHttpClient okClient = new OkHttpClient
+                .Builder()
+                .addNetworkInterceptor(new StethoInterceptor())
+                .build();
+
+
+        picasso = new Picasso.Builder(getApplicationContext())
+                .downloader(new OkHttp3Downloader(okClient))
+                .loggingEnabled(true)
+                .build();
+    }
+
+    public static Picasso getPicasso() {
+        return picasso;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
         mContext = this;
+        setPicasso();
+
         Stetho.initializeWithDefaults(this);
         Stetho.initialize(
                 Stetho.newInitializerBuilder(this)
@@ -29,13 +53,6 @@ public class MyApplication extends Application {
                                 Stetho.defaultInspectorModulesProvider(this))
                         .build());
 
-        OkHttpClient client = new OkHttpClient();
-        client.networkInterceptors().add(new StethoInterceptor());
-
-        Picasso picasso = new Picasso.Builder(this)
-                .downloader()
-                .build();
-        Picasso.setSingletonInstance(picasso);
     }
 
     public static Context getContext(){

@@ -1,5 +1,6 @@
 package com.mursitaffandi.cataloguemovie.network;
 
+import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.mursitaffandi.cataloguemovie.BuildConfig;
 import com.mursitaffandi.cataloguemovie.util.Constant;
 import com.mursitaffandi.cataloguemovie.util.Localize;
@@ -19,7 +20,7 @@ public class ClientCall {
 
     public ClientCall() {
 
-        OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(new Interceptor() {
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().addNetworkInterceptor(new StethoInterceptor()).addInterceptor(new Interceptor() {
             @Override
             public Response intercept(Chain chain) throws IOException {
                 Request request = chain.request();
