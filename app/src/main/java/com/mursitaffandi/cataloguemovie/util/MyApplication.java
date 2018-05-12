@@ -33,7 +33,7 @@ public class MyApplication extends Application {
         client.networkInterceptors().add(new StethoInterceptor());
 
         Picasso picasso = new Picasso.Builder(this)
-                .downloader(client)
+                .downloader()
                 .build();
         Picasso.setSingletonInstance(picasso);
     }
