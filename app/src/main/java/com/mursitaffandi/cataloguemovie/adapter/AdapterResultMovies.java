@@ -17,6 +17,7 @@ import com.mursitaffandi.cataloguemovie.util.Constant;
 import com.mursitaffandi.cataloguemovie.R;
 import com.mursitaffandi.cataloguemovie.model.Result;
 import com.mursitaffandi.cataloguemovie.util.DateTime;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -41,7 +42,8 @@ public class AdapterResultMovies extends RecyclerView.Adapter<ResultVH> implemen
     @Override
     public void onBindViewHolder(ResultVH holder, int position) {
         //if (resultList == null && resultList.size() == 0) return;
-        Glide.with(mContext).load(BuildConfig.BASE_URL_IMG + Constant.SIZE_IMAGE_POSTER + resultList.get(position).getPosterPath()).into(holder.imageView);
+//        Glide.with(mContext).load(BuildConfig.BASE_URL_IMG + Constant.SIZE_IMAGE_POSTER + resultList.get(position).getPosterPath()).into(holder.imageView);
+        Picasso.with(mContext).load(BuildConfig.BASE_URL_IMG + Constant.SIZE_IMAGE_POSTER + resultList.get(position).getPosterPath()).into(holder.imageView);
         holder.tv_title.setText(resultList.get(position).getOriginalTitle());
         holder.tv_overview.setText(resultList.get(position).getOverview());
         holder.tv_release.setText(DateTime.getLongDate(resultList.get(position).getReleaseDate()));

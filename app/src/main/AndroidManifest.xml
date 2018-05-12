@@ -5,6 +5,7 @@
     <permission
         android:name="com.mursitaffandi.cataloguemovie.READ_DATABASE"
         android:protectionLevel="normal" />
+
     <permission
         android:name="com.mursitaffandi.cataloguemovie.WRITE_DATABASE"
         android:protectionLevel="normal" />
@@ -64,6 +65,7 @@
             android:name=".util.alarm.AlarmReceiver"
             android:enabled="true"
             android:exported="true" />
+
         <receiver android:name=".widget.FavoriteWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
